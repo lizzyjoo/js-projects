@@ -1,0 +1,41 @@
+@import url('compass/css3'); /* This URL is a placeholder and should be replaced with the actual URL if needed */
+
+.books {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.books img {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 200px;
+  margin: 0 10px;
+  transform: perspective(500px) rotateY(22deg);
+  transition: all 0.2s ease;
+  box-shadow:
+    -2px 0 -1px black,
+    -4px 0 -2px black,
+    -6px 0 -3px black,
+    -8px 0 -4px black,
+    -10px 0 -5px black;
+}
+
+.books img:hover {
+  transform: perspective(500px) rotateY(0deg);
+  box-shadow: none;
+}
+
+.shelf {
+  height: 100px;
+  margin: -50px auto 0;
+  transform: perspective(10px) rotateX(20deg);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/retina_wood_@2X.png');
+  background-size: 100%, 512px;
+}
+
+body {
+  background: url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/retina_wood_@2X.png');
+  background-size: 512px;
+  overflow: hidden;
+}
