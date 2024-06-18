@@ -1,6 +1,7 @@
 # js-projects
 compilation of mini javascript projects
 
+## Github page: https://lizzyjoo.github.io/js-projects/library/
 ## bookshelf layout
 - I loved this 3D Bookshelf designed by Chris Coyier (https://codepen.io/chriscoyier/pen/DZGNXm) and applied it to my project! 
 - Modifications: 
