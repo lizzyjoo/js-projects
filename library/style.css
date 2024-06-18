@@ -25,7 +25,7 @@
 }
 
 .shelf {
-  height: 100px;
+  height: 300px;
   margin: -50px auto 0;
   transform: perspective(10px) rotateX(20deg);
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
