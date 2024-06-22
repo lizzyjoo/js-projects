@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Tic-Tac-Toe</h1>
+        </div>
+        <div class="name_input" id="name_input">
+            <form name="myForm" id="myForm" onsubmit = "return validateForm()">
+                <div>
+                    <label id="p1-label">Player 1:
+                        <input type="text" id="player1" name="player1" placeholder="Shiba Inu">
+                    </label>
+                </div>
+                <div>
+                    <label id="p2-label">Player 2:
+                        <input type="text" id="player2" name="player2" placeholder="Samoyed">
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" id="submitBtn" value="Start Game" />
+                </div>
+                
+              </form>
+        </div>
+        <h2 class="turn"></h2>
+        <div class="board"></div>
+    </div>
+        
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
