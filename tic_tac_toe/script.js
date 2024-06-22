@@ -177,11 +177,17 @@ function ScreenController() {
 
     function clickHandlerBoard(e) {
         if (!e.target.classList.contains("cell")) return;
-
+    
         const selectedColumn = parseInt(e.target.dataset.column);
         const selectedRow = parseInt(e.target.dataset.row);
         if (isNaN(selectedColumn) || isNaN(selectedRow)) return;
-
+    
+        const board = game.getBoard();
+        if (board[selectedRow][selectedColumn].getValue() !== ' ') {
+            // Cell is already taken, ignore
+            return;
+        }
+    
         game.playRound(selectedRow, selectedColumn);
     }
 
