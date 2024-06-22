@@ -6,6 +6,12 @@
 
 body {
     background-color: #f6bd60;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 h1{
     font-size: 46px;
@@ -85,6 +91,8 @@ input[type="text"] {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    height: 100vh;
+    
 }
 .board {
     display: grid;
