@@ -1,0 +1,49 @@
+#about-intro {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 0;
+}
+#about-paragraph {
+    font-size: 24px;
+}
+.about-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 80%;
+
+}
+.card{
+    display: flex;
+    align-items: center;
+    border: 4px;
+    border-color: #7f5539;
+    border-style: ridge;
+    background-color: #b08968;
+    color: black;
+    gap: 10px;
+}
+
+#matcha-card{
+    animation: leftrightmove 2s;
+}
+
+#pastry-card {
+    animation: rightleftmove 2s;
+
+}
+
+.caption{
+    font-size: 20px;
+    padding: 4px;
+}
+
+@keyframes leftrightmove {
+    0% { transform: translateX(-600px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes rightleftmove {
+    0% { transform: translateX(600px); }
+  100% { transform: translateX(0); }
+}

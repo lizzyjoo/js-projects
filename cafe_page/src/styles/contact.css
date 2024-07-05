@@ -1,0 +1,136 @@
+.contact-heading {
+    font-size: 38px;
+    margin-bottom: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+}
+
+#subject{
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 20px;
+}
+
+input{
+    border-color: #7f5539;
+    border-width: 4px;
+    font-size: 16px;
+}
+
+
+.btn {
+    display: block;
+    text-align: center;
+    padding: 0.7em 1em;
+    background: transparent;
+    outline: none;
+    border: 0;
+    color: black;
+    width: 65px;
+    height: 65px;
+    letter-spacing: 0.1em;
+    font-family: monospace;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1;
+    
+    margin-right: 0;
+    margin-left: auto;
+  }
+  
+  .cube {
+    position: relative;
+    transition: all 0.5s;
+  }
+  
+  .cube .bg-top {
+    position: absolute;
+    height: 10px;
+    background: black;
+    bottom: 100%;
+    left: 5px;
+    right: -5px;
+    transform: skew(-45deg, 0);
+    margin: 0;
+    transition: all 0.4s;
+  }
+  
+  .cube .bg-top .bg-inner {
+    bottom: 0;
+  }
+  
+  .cube .bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background: black;
+    transition: all 0.4s;
+  }
+  
+  .cube .bg-right {
+    position: absolute;
+    background: black;
+    top: -5px;
+    z-index: 0;
+    bottom: 5px;
+    width: 10px;
+    left: 100%;
+    transform: skew(0, -45deg);
+    transition: all 0.4s;
+  }
+  
+  .cube .bg-right .bg-inner {
+    left: 0;
+  }
+  
+  .cube .bg-inner {
+    background: #9c6644;
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+  }
+  
+  .cube .text {
+    position: relative;
+    transition: all 0.4s;
+  }
+  
+  .cube:hover .bg-inner {
+    background: #ddb892;
+    transition: all 0.4s;
+  }
+  
+  .cube:hover .text {
+    color: #9c6644;
+    transition: all 0.4s;
+  }
+  
+  .cube:hover .bg-right,
+  .cube:hover .bg,
+  .cube:hover .bg-top {
+    background: #9c6644;
+  }
+  
+  .cube:active {
+    z-index: 9999;
+    animation: bounce 0.1s linear;
+  }
+  
+  @keyframes bounce {
+    50% {
+      transform: scale(0.9);
+    }
+  }

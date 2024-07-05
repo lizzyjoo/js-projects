@@ -1,0 +1,25 @@
+
+.cafe-info {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 100%;
+}
+
+#cafe-intro {
+    font-style: italic;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 0;
+}
+
+#cafe-caption {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 0;
+}
+
+#home-img {
+    border: 5px;
+    border-color: #7f5539;
+    border-style: solid;
+}
